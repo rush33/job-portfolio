@@ -8,12 +8,12 @@ const Main = () => {
           <p className="uppercase text-sm tracking-widest text-gray-600">
             Let's build together
           </p>
-          <h1 className="py-4 text-gray-700">
+          <h2 className="py-4 text-gray-700">
             Hi, I'm <span className="text-[#5651e5]">Rushad</span>
-          </h1>
-          <h1 className="py-2 text-gray-700">
+          </h2>
+          <h2 className="py-2 text-gray-700">
             A Front-End Web Developer
-          </h1>
+          </h2>
         </div>
       </div>
     </div>
