@@ -25,6 +25,7 @@ const Projects = () => {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
+                alt="Screenshot"
                 layout="responsive"
               />
 
@@ -51,6 +52,7 @@ const Projects = () => {
                     href="https://github.com/rush33/support-desk"
                     class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                     <span class="relative group-hover:text-white flex items-center gap-1">
@@ -61,6 +63,7 @@ const Projects = () => {
                   <a
                     href="#_"
                     target="_blank"
+                    rel="noreferrer"
                     class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                   >
                     <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
@@ -81,6 +84,7 @@ const Projects = () => {
                 width={"100"}
                 height={"80"}
                 layout="responsive"
+                alt="Screenshot"
               />
 
               <div class="p-4">
@@ -104,6 +108,7 @@ const Projects = () => {
                 <div className="flex justify-evenly">
                   <a
                     href="https://github.com/rush33/feedback-app"
+                    rel="noreferrer"
                     target="_blank"
                     class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                   >
@@ -115,6 +120,8 @@ const Projects = () => {
 
                   <a
                     href="#_"
+                    rel="noreferrer"
+                    target="_blank"
                     class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                   >
                     <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
@@ -134,6 +141,7 @@ const Projects = () => {
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
+                alt="Screenshot"
                 layout="responsive"
               />
 
@@ -158,6 +166,7 @@ const Projects = () => {
                 <div className="flex justify-evenly">
                   <a
                     href="https://github.com/rush33/quote-generator"
+                    rel="noreferrer"
                     class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                     target="_blank"
                   >
@@ -171,6 +180,7 @@ const Projects = () => {
                     href="https://quotegen33.netlify.app/"
                     class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                     <span class="relative group-hover:text-white flex items-center gap-1">

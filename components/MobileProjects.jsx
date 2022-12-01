@@ -39,6 +39,7 @@ const MobileProjects = () => {
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
+                  alt="Screenshot"
                 />
 
                 <div class="p-4">
@@ -64,6 +65,7 @@ const MobileProjects = () => {
                       href="https://github.com/rush33/support-desk"
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
@@ -75,6 +77,7 @@ const MobileProjects = () => {
                       href=""
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
@@ -96,6 +99,7 @@ const MobileProjects = () => {
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
+                  alt="Screenshot"
                 />
 
                 <div class="p-4">
@@ -121,6 +125,7 @@ const MobileProjects = () => {
                       href=""
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
@@ -132,6 +137,7 @@ const MobileProjects = () => {
                       href="https://quotegen33.netlify.app/"
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
@@ -152,6 +158,7 @@ const MobileProjects = () => {
                   width={"100"}
                   height={"80"}
                   layout="responsive"
+                  alt="Screenshot"
                 />
 
                 <div class="p-4">
@@ -177,6 +184,7 @@ const MobileProjects = () => {
                       href="https://github.com/rush33/feedback-app"
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
@@ -187,6 +195,8 @@ const MobileProjects = () => {
                     <a
                       href="#_"
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
+                      rel="noreferrer"
+                      target='_blank'
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
