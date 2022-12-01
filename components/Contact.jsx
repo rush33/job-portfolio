@@ -24,7 +24,7 @@ const Contact = () => {
     <div id="contact" className="mt-24 pt-8 pb-12 mx-auto bg-[#CDD7DF]">
       <div className="w-4/5 mx-auto">
         <h2>Connect</h2>
-        <p className="text-lg tracking-widest uppercase text-[#5651e5] ">
+        <p className="text-md tracking-widest uppercase text-[#5651e5] ">
           with me
         </p>
         <div className="flex justify-between items">
