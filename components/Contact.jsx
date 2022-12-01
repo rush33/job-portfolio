@@ -27,15 +27,15 @@ const Contact = () => {
         <p className="text-md tracking-widest uppercase text-[#5651e5] ">
           with me
         </p>
-        <div className="flex justify-between items">
-          <div className=" flex flex-col  justify-center">
+        <div className="py-8 flex flex-col items-center  md:flex justify-between items">
+          <div className="flex flex-col  justify-center">
             <div>
               <p className="my-1 font-semibold">
                 🎓 Bachelor`s in Computer Applications <br />
                 📍 India
               </p>
             </div>
-            <div className="flex justify-around pt-4">
+            <div className="flex justify-around py-6">
               <Tooltip content="LinkedIn" placement="bottom">
                 <a
                   href="https://linkedin.com/in/rushad-ahmed-a952b4243"
