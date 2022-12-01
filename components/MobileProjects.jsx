@@ -61,8 +61,9 @@ const MobileProjects = () => {
                   </p>
                   <div className="flex justify-evenly">
                     <a
-                      href="#_"
+                      href="https://github.com/rush33/support-desk"
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
+                      target="_blank"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
@@ -71,8 +72,9 @@ const MobileProjects = () => {
                     </a>
 
                     <a
-                      href="#_"
+                      href=""
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
+                      target="_blank"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
@@ -84,7 +86,6 @@ const MobileProjects = () => {
               </div>
             </div>
           </SwiperSlide>
-
 
           <SwiperSlide>
             <div class="flex justify-center border-3 border-red-600 ">
@@ -117,8 +118,9 @@ const MobileProjects = () => {
                   </p>
                   <div className="flex justify-evenly">
                     <a
-                      href="#_"
+                      href=""
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
+                      target="_blank"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
@@ -127,8 +129,9 @@ const MobileProjects = () => {
                     </a>
 
                     <a
-                      href="#_"
+                      href="https://quotegen33.netlify.app/"
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
+                      target="_blank"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
@@ -171,8 +174,9 @@ const MobileProjects = () => {
                   </p>
                   <div className="flex justify-evenly">
                     <a
-                      href="#_"
+                      href="https://github.com/rush33/feedback-app"
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-purple-50 text-[#5651e5] inline-block"
+                      target="_blank"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">

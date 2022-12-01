@@ -31,8 +31,8 @@ const Contact = () => {
           <div className=" flex flex-col  justify-center">
             <div>
               <p className="my-1 font-semibold">
-                🎓Bachelor's in Computer Applications <br />
-                📍 India
+              🎓 Bachelor's in Computer Applications <br />
+              📍 India
               </p>
             </div>
             <div className="flex justify-around pt-4">
@@ -57,7 +57,7 @@ const Contact = () => {
                 </a>
               </Tooltip>
 
-              <Tooltip content="Github" placement="bottom">
+              <Tooltip content="Instagram" placement="bottom">
                 <a href="https://www.instagram.com/rushdt.3" target="_blank">
                   <RiInstagramLine className="text-4xl text-pink-600 drop-shadow-2xl hover:text-pink-400" />
                 </a>
