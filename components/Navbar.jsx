@@ -7,21 +7,32 @@ const Navbar = () => {
     <div className="navbar backdrop-blur-md fixed">
       <div className="container mx-auto px-4">
         <div className="flex-1">
-          <Link href="/" className="btn btn-ghost normal-case text-xl">Rushad's Portfolio</Link>
+          <Link
+            href="/"
+            className="btn btn-ghost normal-case text-xl hover:text-[#5651e5]"
+          >
+            Rushad's Portfolio
+          </Link>
         </div>
-        
+
         <div className="flex-none">
-          <ul className="menu menu-horizontal p-0 font-semibold">
+          <ul className="menu menu-horizontal font-semibold">
             <Link href="/#skills">
-              <li className="mx-3">Skills</li>
+              <li className="mx-3 hover:bg-slate-200 hover:text-[#5651e5]">
+                Skills
+              </li>
             </Link>
 
             <Link href="/#projects">
-              <li className="mx-3">Projects</li>
+              <li className="mx-3 hover:bg-slate-200 hover:text-[#5651e5]">
+                Projects
+              </li>
             </Link>
 
             <Link href="/#contact">
-              <li className="mx-3">Contact</li>
+              <li className="mx-3 hover:bg-slate-200 hover:text-[#5651e5]">
+                Contact
+              </li>
             </Link>
           </ul>
         </div>
