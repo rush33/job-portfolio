@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="flex-1">
           <Link
             href="/"
-            className="btn btn-ghost normal-case text-xl hover:text-[#5651e5]"
+            className="btn btn-ghost normal-case text- hover:text-[#5651e5]"
           >
             Rushad's Portfolio
           </Link>

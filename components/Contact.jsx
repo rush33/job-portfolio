@@ -27,10 +27,11 @@ const Contact = () => {
         <p className="text-md tracking-widest uppercase text-[#5651e5] ">
           with me
         </p>
-        <div className="py-8 flex flex-col items-center  md:flex justify-between items">
+        {/* sm:flex flex-col-reverse items-center pt-6 */}
+        <div className="flex flex-col-reverse items-center md:flex-row justify-between">
           <div className="flex flex-col  justify-center">
             <div>
-              <p className="my-1 font-semibold">
+              <p className="my-6 font-semibold">
                 🎓 Bachelor`s in Computer Applications <br />
                 📍 India
               </p>
