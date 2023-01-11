@@ -10,13 +10,23 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { RoughNotation } from "react-rough-notation";
+
 
 const MobileProjects = () => {
   return (
     <div id="mobile" className="container w-4/5 mx-auto mt-20 lg:hidden">
       {/* top */}
-      <p className="text-xl tracking-widest uppercase text-[orange] ">
-        Works &
+      <p className="font-medium text-xl tracking-widest uppercase text-[black] ">
+        <RoughNotation
+          type="highlight"
+          show={true}
+          color="#fff176"
+          animationDuration="2000"
+          animationDelay="1500"
+        >
+          Works &
+        </RoughNotation>
       </p>
       <h2>Projects</h2>
       <div className="mt-12 p-5 gap-12 sm:flex flex-wrap justify-center w-full mx-auto ">
@@ -196,7 +206,7 @@ const MobileProjects = () => {
                       href="#_"
                       class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
                       rel="noreferrer"
-                      target='_blank'
+                      target="_blank"
                     >
                       <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bbg-yellow-400 group-hover:h-full opacity-90"></span>
                       <span class="relative group-hover:text-white flex items-center gap-1">
