@@ -11,12 +11,23 @@ import {
   SiGit,
   SiMongodb
 } from "react-icons/si";
+import { RoughNotation } from "react-rough-notation";
+
+
 const Skills = () => {
   return (
-    <div id="skills" className="w-4/5 py-24 mx-auto" >
+    <div id="skills" className="w-4/5 py-24 mx-auto">
       <div className="mx-auto flex flex-col flex-start ">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5] ">
-          Skills &
+        <p className="text-xl font-medium tracking-widest uppercase text-black ">
+          <RoughNotation
+            type="highlight"
+            show={true}
+            color="#fff176"
+            animationDuration="2000"
+            animationDelay="1500"
+          >
+            Skills &
+          </RoughNotation>
         </p>
         <h2>Experience</h2>
         <div className="mt-12 p-5 gap-12 sm:p-0 flex flex-wrap justify-center w-full mx-auto ">

@@ -21,10 +21,10 @@ const Contact = () => {
     },
   };
   return (
-    <div id="contact" className="mt-24 pt-8 pb-12 mx-auto bg-[#CDD7DF]">
+    <div id="contact" className="mt-24 pt-8 pb-12 mx-auto bg-[#fdf8e1]">
       <div className="w-4/5 mx-auto">
         <h2>Connect</h2>
-        <p className="text-md tracking-widest uppercase text-[#5651e5] ">
+        <p className="text-md tracking-widest uppercase text-black] ">
           with me
         </p>
         {/* sm:flex flex-col-reverse items-center pt-6 */}
