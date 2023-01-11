@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { FiSend } from "react-icons/fi";
+import Image from "next/image";
+import Logo from "../assets/logo.png"
 
 const Navbar = () => {
   return (
@@ -26,14 +29,20 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
           >
-            <li className="text font-medium">
-              <Link href="/#skills">Services</Link>
+            <li className="text font-medium ">
+              <Link href="/#skills">
+                <span className="text-lg">Services</span>
+              </Link>
             </li>
             <li className="font-medium">
-              <Link href="/#mobile">Experience</Link>
+              <Link href="/#mobile">
+                <span className="text-lg">Experience</span>
+              </Link>
             </li>
             <li className="font-medium">
-              <Link href="/#about">About</Link>
+              <Link href="/#contact">
+                <span className="text-lg">Contact</span>
+              </Link>
             </li>
           </ul>
         </div>
@@ -45,8 +54,8 @@ const Navbar = () => {
           </ul>
         </div> */}
         <Link href="/">
-          <div className="hidden lg:btn btn-ghost normal-case text-xl">
-            Rushad
+          <div className="hidden lg:flex">
+            <Image src={Logo} width={70} height={70} responsive />
           </div>
         </Link>
       </div>
@@ -84,9 +93,10 @@ const Navbar = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="outline bg-[#fff176] hover:bg-[#f5c000] text-black font-medium  py-2 px-4 rounded-full cursor-pointer duration-200 delay-100">
-            Send a message
-          </div>
+          <button className="flex items-center justify-center outline bg-[#fff176]  text-black font-medium py-2 px-4 rounded-full hover:bg-[#f5c000] cursor-pointer duration-200 delay-100">
+            <FiSend className="mr-1 text-lg" />
+            <span>Send a message</span>
+          </button>
         </a>
       </div>
     </div>

@@ -3,6 +3,8 @@ import Link from "next/link";
 import icon from "../assets/icon2.png";
 import { RoughNotation } from "react-rough-notation";
 import { motion } from "framer-motion";
+import { MdWork } from "react-icons/md";
+
 
 const Main = () => {
   return (
@@ -14,7 +16,7 @@ const Main = () => {
               className="py-4 text-gray-500 text-3xl font-normal md:pt-8"
               initial={{ opacity: 0.2 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.7 }}
             >
               Hi, I'm
               <span id="n" className="text-[#f5c000] font-medium">
@@ -29,7 +31,7 @@ const Main = () => {
                 show={true}
                 color="#fff176"
                 animationDuration="2000"
-                animationDelay="500"
+                animationDelay="1500"
               >
                 Front-End Web Developer
               </RoughNotation>
@@ -45,10 +47,19 @@ const Main = () => {
               create engaging and effective online experiences.
             </motion.h3>
           </div>
-          <div className="flex">
+          <div className="hidden lg:flex">
             <Link href="/#projects">
-              <button className="outline bg-[#fff176] hover:bg-[#f5c000] text-black font-medium py-2 px-4 rounded-full cursor-pointer duration-200 delay-100">
-                View my work
+              <button className="flex items-center outline bg-[#fff176]  text-black font-medium py-2 px-4 hover:bg-[#f5c000] rounded-full cursor-pointer duration-200 delay-100">
+                <span>View my work</span>
+                <MdWork className="ml-2 text-lg" />
+              </button>
+            </Link>
+          </div>
+          <div className="flex lg:hidden">
+            <Link href="/#mobile">
+              <button className="flex items-center outline bg-[#fff176]  text-black font-medium py-2 px-4 hover:bg-[#f5c000] rounded-full cursor-pointer duration-200 delay-100">
+                <span>View my work</span>
+                <MdWork className="ml-2 text-lg" />
               </button>
             </Link>
           </div>
@@ -68,7 +79,6 @@ const Main = () => {
 };
 
 export default Main;
-
 
 {
   /* <div className="">
