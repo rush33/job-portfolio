@@ -32,11 +32,10 @@ const Contact = () => {
           <div className="flex flex-col  justify-center">
             <div>
               <p className="my-6 font-semibold">
-                🎓 Bachelor`s in Computer Applications <br />
-                📍 India
+                🎓 Bachelor`s in Computer Applications <br /> 📍 India <br />
               </p>
             </div>
-            <div className="flex justify-around py-6">
+            <div className="flex justify-around py-6 ">
               <Tooltip content="LinkedIn" placement="bottom">
                 <a
                   href="https://linkedin.com/in/rushad-ahmed-a952b4243"
