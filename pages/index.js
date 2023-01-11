@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Rushad`s Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Rushad Ahmed</title>
+        <link rel="icon" href="/faviconrush.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
