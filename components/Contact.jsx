@@ -68,7 +68,7 @@ const Contact = () => {
 
               <Tooltip content="Instagram" placement="bottom">
                 <a
-                  href="https://www.instagram.com/rushdt.3"
+                  href="https://www.instagram.com/rushd.33"
                   target="_blank"
                   rel="noreferrer"
                 >
