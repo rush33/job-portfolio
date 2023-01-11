@@ -93,7 +93,7 @@ const Navbar = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="flex items-center justify-center outline bg-[#fff176]  text-black font-medium py-2 px-4 rounded-full hover:bg-[#f5c000] cursor-pointer duration-200 delay-100">
+          <button className="flex items-center justify-center border-2 border-black bg-[#fff176]  text-black font-medium py-2 px-4 rounded-full hover:bg-[#f5c000] cursor-pointer duration-200 delay-100">
             <FiSend className="mr-1 text-lg" />
             <span>Send a message</span>
           </button>

@@ -49,7 +49,7 @@ const Main = () => {
           </div>
           <div className="hidden lg:flex">
             <Link href="/#projects">
-              <button className="flex items-center outline bg-[#fff176]  text-black font-medium py-2 px-4 hover:bg-[#f5c000] rounded-full cursor-pointer duration-200 delay-100">
+              <button className="flex items-center border-2 border-black bg-[#fff176]  text-black font-medium py-2 px-4 hover:bg-[#f5c000] rounded-full cursor-pointer duration-200 delay-100">
                 <span>View my work</span>
                 <MdWork className="ml-2 text-lg" />
               </button>
@@ -57,7 +57,7 @@ const Main = () => {
           </div>
           <div className="flex lg:hidden">
             <Link href="/#mobile">
-              <button className="flex items-center outline bg-[#fff176]  text-black font-medium py-2 px-4 hover:bg-[#f5c000] rounded-full cursor-pointer duration-200 delay-100">
+              <button className="flex items-center border-2 border-black bg-[#fff176]  text-black font-medium py-2 px-4 hover:bg-[#f5c000] rounded-full cursor-pointer duration-200 delay-100">
                 <span>View my work</span>
                 <MdWork className="ml-2 text-lg" />
               </button>
