@@ -12,13 +12,19 @@ export default function Home() {
       <Head>
         <title>Rushad`s Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <Navbar />
       <Main />
       <Skills />
       <Projects />
-      <MobileProjects/>
+      <MobileProjects />
       <Contact />
     </div>
   );

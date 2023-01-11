@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        YesevaOne: ["Yeseva One", "cursive"],
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {

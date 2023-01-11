@@ -10,7 +10,7 @@ scroll-behavior: smooth!important;
 @layer base {
   
   body{
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide overflow-x-hidden 
+     @apply bg-[white] text-[black] tracking-wide overflow-x-hidden 
   }
 
   h1, h2, h3, h4, h5, h6 {
