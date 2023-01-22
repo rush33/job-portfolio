@@ -5,7 +5,6 @@ import Logo from "../assets/logo.png"
 
 const Navbar = () => {
   return (
-    // <h3>dawg</h3>
     <div className="navbar backdrop-blur-md fixed z-20 border-b-2 lg:px-24">
       <div className=" navbar-start ">
         <div className="dropdown">
@@ -31,7 +30,7 @@ const Navbar = () => {
           >
             <li className="text font-medium ">
               <Link href="/#skills">
-                <span className="text-lg">Services</span>
+                <span className="text-lg">Skills</span>
               </Link>
             </li>
             <li className="font-medium">

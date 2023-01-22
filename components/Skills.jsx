@@ -14,6 +14,7 @@ import {
 import { RoughNotation } from "react-rough-notation";
 
 
+
 const Skills = () => {
   return (
     <div id="skills" className="w-4/5 py-24 mx-auto">
