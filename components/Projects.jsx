@@ -112,8 +112,7 @@ const Projects = () => {
                 </div>
 
                 <p class="text-gray-700 tracking-normal mb-4 mt-2">
-                  A feedback interface where user can give ratings, write
-                  reviews and view the average ratings.
+                  A UI to add and delete ratings where all data are stored and fetched from JSON Web Server
                 </p>
                 <div className="flex justify-evenly">
                   <a
@@ -129,7 +128,7 @@ const Projects = () => {
                   </a>
 
                   <a
-                    href="#_"
+                    href="https://feedback-app-eight-liard.vercel.app/"
                     rel="noreferrer"
                     target="_blank"
                     class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
