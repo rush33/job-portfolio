@@ -6,7 +6,7 @@ import {
   RiInstagramLine,
 } from "react-icons/ri";
 import Image from "next/image";
-import dp from "../assets/dp.jpg";
+import dp from "../assets/dp2.png";
 import { Tooltip, Button } from "@material-tailwind/react";
 
 const Contact = () => {
@@ -22,7 +22,7 @@ const Contact = () => {
   };
   return (
     <div id="contact" className="mt-24 pt-8 pb-12 mx-auto bg-[#fdf8e1]">
-      <div className="w-4/5 mx-auto">
+      <div className="w-4/5 mx-auto ">
         <h2>Connect</h2>
         <p className="text-md tracking-widest uppercase text-black] ">
           with me
@@ -32,7 +32,7 @@ const Contact = () => {
           <div className="flex flex-col  justify-center">
             <div>
               <p className="my-6 font-semibold">
-                🎓 Bachelor`s in Computer Applications <br /> 📍 India <br />
+                🎓 Bachelor's in Computer Applications <br /> 📍 India <br />
               </p>
             </div>
             <div className="flex justify-around py-6 ">

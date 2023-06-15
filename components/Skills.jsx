@@ -12,36 +12,27 @@ import {
   SiGit,
   SiMongodb,
   SiRedux,
-  SiTypescript,
 } from "react-icons/si";
 
 const skillsData = [
-  {
-    icon: <SiJavascript />,
-    text: "Javascript",
-    color: "[#f0db4f]",
-    additionalStyle: "bg-black",
-  },
-  { icon: <SiReact />, text: "React", color: "blue-400" },
-  { icon: <SiReact />, text: "React Native", color: "blue-600" },
-  { icon: <SiTypescript />, text: "TypeScript", color: "blue-500" },
-  { icon: <SiTailwindcss />, text: "Tailwind CSS", color: "blue-400" },
-  { icon: <SiNextdotjs />, text: "Next JS", color: "black" },
-  { icon: <SiMongodb />, text: "Mongo DB", color: "green-500" },
-  { icon: <SiRedux />, text: "Redux", color: "purple-500" },
-  { icon: <SiNodedotjs />, text: "Node JS", color: "green-600" },
-  { icon: <SiCss3 />, text: "CSS", color: "blue-600" },
-  { icon: <SiGit />, text: "Git", color: "orange-500" },
-  { icon: <SiHtml5 />, text: "HTML", color: "orange-600" },
-  { icon: <SiExpress />, text: "Express JS", color: "[#5651e5]" },
+  { icon: <SiJavascript />, text: "Javascript", skillColor: "yellow-400" },
+  { icon: <SiReact />, text: "React", skillColor: "blue-400" },
+  { icon: <SiReact />, text: "React Native", skillColor: "blue-600" },
+  { icon: <SiTailwindcss />, text: "Tailwind CSS", skillColor: "blue-400" },
+  { icon: <SiNextdotjs />, text: "Next JS", skillColor: "black" },
+  { icon: <SiMongodb />, text: "Mongo DB", skillColor: "green-500" },
+  { icon: <SiRedux />, text: "Redux", skillColor: "purple-500" },
+  { icon: <SiNodedotjs />, text: "Node JS", skillColor: "green-600" },
+  { icon: <SiCss3 />, text: "CSS", skillColor: "blue-600" },
+  { icon: <SiGit />, text: "Git", skillColor: "orange-500" },
+  { icon: <SiHtml5 />, text: "HTML", skillColor: "orange-600" },
+  { icon: <SiExpress />, text: "Express JS", skillColor: "indigo-600" },
 ];
 
-const SkillItem = ({ icon, text, color, additionalStyle }) => (
+const SkillItem = ({ icon, text, skillColor }) => (
   <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300">
     <div className="flex flex-col justify-center items-center">
-      <div className={`mx-auto text-5xl text-${color} ${additionalStyle}`}>
-        {icon}
-      </div>
+      <div className={`mx-auto text-5xl text-${skillColor}`}>{icon}</div>
       <p className="font-semibold my-1 cursor-default">{text}</p>
     </div>
   </div>
@@ -69,8 +60,7 @@ const Skills = () => {
               key={index}
               icon={skill.icon}
               text={skill.text}
-              color={skill.color}
-              additionalStyle={skill.additionalStyle}
+              skillColor={skill.skillColor}
             />
           ))}
         </div>
