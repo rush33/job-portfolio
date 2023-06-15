@@ -5,6 +5,7 @@ import { RoughNotation } from "react-rough-notation";
 import sd from "../public/assets/sd.png";
 import feedback from "../public/assets/feedback.png";
 import food from "../public/assets/food.png";
+import social from "../public/assets/social.png";
 
 const ProjectCard = ({
   imageSrc,
@@ -57,17 +58,19 @@ const ProjectCard = ({
               </span>
             </a>
 
-            <a
-              href={demoLink}
-              className="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
-              <span className="relative group-hover:text-white flex items-center gap-1">
-                <ImLink className="inline text-md" /> Demo
-              </span>
-            </a>
+            {demoLink && (
+              <a
+                href={demoLink}
+                className="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
+                <span className="relative group-hover:text-white flex items-center gap-1">
+                  <ImLink className="inline text-md" /> Demo
+                </span>
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -112,7 +115,15 @@ const Projects = () => {
             technologies={["MERN", "Full-Stack"]}
             description="An application where user can register, login, view and track the status of items using tickets functionality."
             githubLink="https://github.com/rush33/support-desk"
-            demoLink="#_"
+          />
+
+          <ProjectCard
+            imageSrc={social}
+            title="Social Card"
+            technologies={["React JS", "Rest API"]}
+            description="A UI to search and filter social cards fetched from an API"
+            githubLink="https://github.com/rush33/social-cards"
+            demoLink="https://social-cards.vercel.app/"
           />
 
           <ProjectCard
