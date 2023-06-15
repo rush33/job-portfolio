@@ -1,15 +1,84 @@
 import { ImGithub, ImLink } from "react-icons/im";
 import Image from "next/image";
-import sd from "../public/assets/sd.png";
-import feedback from "../public/assets/feedback.png";
-import quote from "../public/assets/quote.png";
 import { RoughNotation } from "react-rough-notation";
 
+import sd from "../public/assets/sd.png";
+import feedback from "../public/assets/feedback.png";
+import food from "../public/assets/food.png";
+
+const ProjectCard = ({
+  imageSrc,
+  title,
+  technologies,
+  description,
+  githubLink,
+  demoLink,
+}) => {
+  return (
+    <div className="flex justify-center cursor-default">
+      <div className="rounded-xl shadow-lg bg-white max-w-xs">
+        <Image
+          src={imageSrc}
+          className="rounded-lg object-cover"
+          width={100}
+          height={80}
+          alt="Screenshot"
+          layout="responsive"
+        />
+
+        <div className="p-4">
+          <h5 className="text-gray-900 text-2xl font-bold mb-2">{title}</h5>
+
+          <div className="flex">
+            {technologies.map((tech, index) => (
+              <div
+                key={index}
+                className="px-2 py-0.5 border-2 border-[orange] rounded-2xl w-fit mx-0.5 text-[orange]"
+              >
+                {tech}
+              </div>
+            ))}
+          </div>
+
+          <p className="text-gray-700 tracking-normal mb-4 mt-2">
+            {description}
+          </p>
+
+          <div className="flex justify-evenly">
+            <a
+              href={githubLink}
+              rel="noreferrer"
+              className="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
+              target="_blank"
+            >
+              <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
+              <span className="relative group-hover:text-white flex items-center gap-1">
+                <ImGithub className="inline text-md" /> Github
+              </span>
+            </a>
+
+            <a
+              href={demoLink}
+              className="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
+              <span className="relative group-hover:text-white flex items-center gap-1">
+                <ImLink className="inline text-md" /> Demo
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Projects = () => {
   return (
     <div id="projects" className="hidden lg:flex">
-      <div className="w-4/5  mx-auto  mt-20 ">
+      <div className="w-4/5 mx-auto mt-20">
         {/* top */}
         <div className="flex flex-col">
           <p className="font-medium text-xl tracking-widest uppercase text-black">
@@ -23,183 +92,37 @@ const Projects = () => {
               Works &
             </RoughNotation>
           </p>
-          <h2> Projects</h2>
+          <h2>Projects</h2>
         </div>
         {/* bottom */}
         <div className="p-5 my-6 sm:p-0 flex justify-evenly items-center gap-8 flex-wrap">
           {/* card */}
-          <div class="flex justify-center cursor-default ">
-            <div class="rounded-xl shadow-lg bg-white max-w-xs">
-              <Image
-                src={sd}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                alt="Screenshot"
-                layout="responsive"
-              />
+          <ProjectCard
+            imageSrc={food}
+            title="Food Delivery App"
+            technologies={["React Native", "Firebase"]}
+            description="A fullstack food delivery app along with restaurant admin dashboard and courier app."
+            githubLink="https://github.com/rush33/food-delivery"
+            demoLink="https://www.youtube.com/watch?v=J5GAZIMtrSM&feature=youtu.be"
+          />
 
-              <div class="p-4">
-                <h5 class="text-gray-900 text-2xl font-bold mb-2">
-                  Support Desk
-                </h5>
+          <ProjectCard
+            imageSrc={sd}
+            title="Support Desk"
+            technologies={["MERN", "Full-Stack"]}
+            description="An application where user can register, login, view and track the status of items using tickets functionality."
+            githubLink="https://github.com/rush33/support-desk"
+            demoLink="#_"
+          />
 
-                <div className="flex ">
-                  <div className="px-2 py-0.5 border-2 border-[orange] rounded-2xl w-fit mx-0.5 text-[orange]">
-                    MERN
-                  </div>
-                  <div className="px-2 py-0.5 border-2 border-[orange] rounded-2xl w-fit mx-0.5 text-[orange]">
-                    Full-Stack
-                  </div>
-                </div>
-
-                <p class="text-gray-700 tracking-normal mb-4 mt-2">
-                  An application where user can register, login, view and track
-                  the status of items using tickets functionality
-                </p>
-                <div className="flex justify-evenly">
-                  <a
-                    href="https://github.com/rush33/support-desk"
-                    class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
-                    <span class="relative group-hover:text-white flex items-center gap-1">
-                      <ImGithub className="inline text-md" /> Github
-                    </span>
-                  </a>
-
-                  <a
-                    href="#_"
-                    target="_blank"
-                    rel="noreferrer"
-                    class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
-                  >
-                    <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
-                    <span class="relative group-hover:text-white flex items-center gap-1">
-                      <ImLink className="inline text-md" /> Preview
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex justify-center cursor-default ">
-            <div class="rounded-xl shadow-lg bg-white max-w-xs ">
-              <Image
-                src={feedback}
-                className="rounded-lg object-cover"
-                width={"100"}
-                height={"80"}
-                layout="responsive"
-                alt="Screenshot"
-              />
-
-              <div class="p-4">
-                <h5 class="text-gray-900 text-2xl font-bold mb-2">
-                  Feedback UI
-                </h5>
-
-                <div className="flex">
-                  <div className="px-2 py-0.5 border-2 border-[orange] rounded-2xl w-fit mx-0.5 text-[orange]">
-                    React JS
-                  </div>
-                  <div className="px-2 py-0.5 border-2 border-[orange] rounded-2xl w-fit mx-0.5 text-[orange]">
-                    JSON Server
-                  </div>
-                </div>
-
-                <p class="text-gray-700 tracking-normal mb-4 mt-2">
-                  A UI to add and delete ratings where all data are stored and fetched from JSON Web Server
-                </p>
-                <div className="flex justify-evenly">
-                  <a
-                    href="https://github.com/rush33/feedback-app"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
-                  >
-                    <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
-                    <span class="relative group-hover:text-white flex items-center gap-1">
-                      <ImGithub className="inline text-md" /> Github
-                    </span>
-                  </a>
-
-                  <a
-                    href="https://feedback-app-eight-liard.vercel.app/"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
-                  >
-                    <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
-                    <span class="relative group-hover:text-white flex items-center gap-1">
-                      <ImLink className="inline text-md" /> Preview
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex justify-center cursor-default">
-            <div class="rounded-xl shadow-lg bg-white max-w-xs ">
-              <Image
-                src={quote}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                alt="Screenshot"
-                layout="responsive"
-              />
-
-              <div class="p-4">
-                <h5 class="text-gray-900 text-2xl font-bold mb-2">
-                  Quote Generator
-                </h5>
-
-                <div className="flex">
-                  <div className="px-2 py-0.5 border-2 border-[orange] rounded-2xl w-fit mx-0.5 text-[orange]">
-                    Javascript
-                  </div>
-                  <div className="px-2 py-0.5 border-2 border-[orange] rounded-2xl w-fit mx-0.5 text-[orange]">
-                    CSS
-                  </div>
-                </div>
-
-                <p class="text-gray-700 tracking-normal mb-4 mt-2">
-                  A simple quote generator which fetches new quotes which can be
-                  copied to clipboard.
-                </p>
-                <div className="flex justify-evenly">
-                  <a
-                    href="https://github.com/rush33/quote-generator"
-                    rel="noreferrer"
-                    class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
-                    target="_blank"
-                  >
-                    <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
-                    <span class="relative group-hover:text-white flex items-center gap-1">
-                      <ImGithub className="inline text-md" /> Github
-                    </span>
-                  </a>
-
-                  <a
-                    href="https://quotegen33.netlify.app/"
-                    class="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span class=" absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-yellow-400 group-hover:h-full opacity-90"></span>
-                    <span class="relative group-hover:text-white flex items-center gap-1">
-                      <ImLink className="inline text-md" /> Preview
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ProjectCard
+            imageSrc={feedback}
+            title="Feedback UI"
+            technologies={["React JS", "JSON Server"]}
+            description="A UI to add and delete ratings where all data are stored and fetched from JSON Web Server."
+            githubLink="https://github.com/rush33/feedback-app"
+            demoLink="https://feedback-app-eight-liard.vercel.app/"
+          />
         </div>
       </div>
     </div>

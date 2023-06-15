@@ -1,4 +1,5 @@
 import React from "react";
+import { RoughNotation } from "react-rough-notation";
 import {
   SiJavascript,
   SiReact,
@@ -9,17 +10,48 @@ import {
   SiNodedotjs,
   SiExpress,
   SiGit,
-  SiMongodb
+  SiMongodb,
+  SiRedux,
+  SiTypescript,
 } from "react-icons/si";
-import { RoughNotation } from "react-rough-notation";
 
+const skillsData = [
+  {
+    icon: <SiJavascript />,
+    text: "Javascript",
+    color: "[#f0db4f]",
+    additionalStyle: "bg-black",
+  },
+  { icon: <SiReact />, text: "React", color: "blue-400" },
+  { icon: <SiReact />, text: "React Native", color: "blue-600" },
+  { icon: <SiTypescript />, text: "TypeScript", color: "blue-500" },
+  { icon: <SiTailwindcss />, text: "Tailwind CSS", color: "blue-400" },
+  { icon: <SiNextdotjs />, text: "Next JS", color: "black" },
+  { icon: <SiMongodb />, text: "Mongo DB", color: "green-500" },
+  { icon: <SiRedux />, text: "Redux", color: "purple-500" },
+  { icon: <SiNodedotjs />, text: "Node JS", color: "green-600" },
+  { icon: <SiCss3 />, text: "CSS", color: "blue-600" },
+  { icon: <SiGit />, text: "Git", color: "orange-500" },
+  { icon: <SiHtml5 />, text: "HTML", color: "orange-600" },
+  { icon: <SiExpress />, text: "Express JS", color: "[#5651e5]" },
+];
 
+const SkillItem = ({ icon, text, color, additionalStyle }) => (
+  <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300">
+    <div className="flex flex-col justify-center items-center">
+      <div className={`mx-auto text-5xl text-${color} ${additionalStyle}`}>
+        {icon}
+      </div>
+      <p className="font-semibold my-1 cursor-default">{text}</p>
+    </div>
+  </div>
+);
 
 const Skills = () => {
   return (
     <div id="skills" className="w-4/5 py-24 mx-auto">
-      <div className="mx-auto flex flex-col flex-start ">
-        <p className="text-xl font-medium tracking-widest uppercase text-black ">
+      <div className="mx-auto flex flex-col flex-start">
+        <p className="text-xl font-medium tracking-widest uppercase text-black">
           <RoughNotation
             type="highlight"
             show={true}
@@ -31,93 +63,16 @@ const Skills = () => {
           </RoughNotation>
         </p>
         <h2>Experience</h2>
-        <div className="mt-12 p-5 gap-12 sm:p-0 flex flex-wrap justify-center w-full mx-auto ">
-          <div className="flex p-4 shadow-xl rounded-xl hover:scale-110 ease-in duration-300 ">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-[#f0db4f] bg-black ">
-                <SiJavascript />
-              </div>
-              <p className="my-1 font-semibold cursor-default ">Javascript</p>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300 ">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-blue-400">
-                <SiReact />
-              </div>
-              <p className="my-1  cursor-default font-semibold">React</p>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-blue-400">
-                <SiTailwindcss />
-              </div>
-              <p className="my-1 font-semibold cursor-default ">Tailwind CSS</p>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-black">
-                <SiNextdotjs />
-              </div>
-              <p className="font-semibold my-1 cursor-default ">Next JS</p>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-green-500">
-                <SiMongodb />
-              </div>
-              <p className="font-semibold my-1 cursor-default ">Mongo DB</p>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300 ">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-green-600">
-                <SiNodedotjs />
-              </div>
-              <p className="my-1 font-semibold cursor-default ">Node JS</p>
-            </div>
-          </div>
-          <div className="flex p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300 ">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-blue-600">
-                <SiCss3 />
-              </div>
-              <p className="my-1 font-semibold cursor-default ">CSS</p>
-            </div>
-          </div>
-          <div className="flex  p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300 ">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-orange-500">
-                <SiGit />
-              </div>
-              <p className="my-1 font-semibold cursor-default ">Git</p>
-            </div>
-          </div>
-
-          <div className="flex  p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300 ">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-orange-600">
-                <SiHtml5 />
-              </div>
-              <p className="my-1 font-semibold cursor-default ">HTML</p>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300 ">
-            <div className="flex flex-col justify-center items-center ">
-              <div className="mx-auto text-5xl text-[#5651e5]">
-                <SiExpress />
-              </div>
-              <p className=" cursor-default font-semibold ">Express JS</p>
-            </div>
-          </div>
+        <div className="mt-12 p-5 gap-12 sm:p-0 flex flex-wrap justify-center w-full mx-auto">
+          {skillsData.map((skill, index) => (
+            <SkillItem
+              key={index}
+              icon={skill.icon}
+              text={skill.text}
+              color={skill.color}
+              additionalStyle={skill.additionalStyle}
+            />
+          ))}
         </div>
       </div>
     </div>
