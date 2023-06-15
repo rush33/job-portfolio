@@ -12,7 +12,7 @@ const ProjectCard = ({
   title,
   technologies,
   description,
-  githubLink,
+  github,
   demoLink,
 }) => {
   return (
@@ -47,7 +47,7 @@ const ProjectCard = ({
 
           <div className="flex justify-evenly">
             <a
-              href={githubLink}
+              href={github}
               rel="noreferrer"
               className="px-3 py-2 relative rounded group overflow-hidden font-medium bg-yellow-50 text-[orange] inline-block"
               target="_blank"
@@ -105,7 +105,7 @@ const Projects = () => {
             title="Food Delivery App"
             technologies={["React Native", "Firebase"]}
             description="A fullstack food delivery app along with restaurant admin dashboard and courier app."
-            githubLink="https://github.com/rush33/food-delivery"
+            github="https://github.com/rush33/food-delivery"
             demoLink="https://www.youtube.com/watch?v=J5GAZIMtrSM&feature=youtu.be"
           />
 
@@ -114,15 +114,15 @@ const Projects = () => {
             title="Support Desk"
             technologies={["MERN", "Full-Stack"]}
             description="An application where user can register, login, view and track the status of items using tickets functionality."
-            githubLink="https://github.com/rush33/support-desk"
+            github="https://github.com/rush33/support-desk"
           />
 
           <ProjectCard
             imageSrc={social}
-            title="Social Card"
+            title="Social Cards"
             technologies={["React JS", "Rest API"]}
             description="A UI to search and filter social cards fetched from an API"
-            githubLink="https://github.com/rush33/social-cards"
+            github="https://github.com/rush33/social-cards"
             demoLink="https://social-cards.vercel.app/"
           />
 
@@ -131,7 +131,7 @@ const Projects = () => {
             title="Feedback UI"
             technologies={["React JS", "JSON Server"]}
             description="A UI to add and delete ratings where all data are stored and fetched from JSON Web Server."
-            githubLink="https://github.com/rush33/feedback-app"
+            github="https://github.com/rush33/feedback-app"
             demoLink="https://feedback-app-eight-liard.vercel.app/"
           />
         </div>

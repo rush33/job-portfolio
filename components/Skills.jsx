@@ -1,5 +1,4 @@
-import React from "react";
-import { RoughNotation } from "react-rough-notation";
+import {createElement} from "react";
 import {
   SiJavascript,
   SiReact,
@@ -12,20 +11,46 @@ import {
   SiGit,
   SiMongodb,
   SiRedux,
+  SiTypescript,
+  SiFirebase
 } from "react-icons/si";
+import { RoughNotation } from "react-rough-notation";
 
-const SkillItem = ({ icon, text, color }) => (
-  <div className="p-6 shadow-xl rounded-xl hover:scale-110 ease-in duration-300">
+const skillsData = [
+  { icon: SiJavascript, text: "Javascript", style: "text-[#f0db4f] bg-black" },
+  { icon: SiReact, text: "React", style: "text-blue-400" },
+  { icon: SiTypescript, text: "TypeScript", style: "text-blue-500" },
+  { icon: SiReact, text: "React Native", style: "text-blue-600" },
+  { icon: SiTailwindcss, text: "Tailwind CSS", style: "text-blue-400" },
+  { icon: SiFirebase, text: "Firebase", style: "text-orange-400" },
+  { icon: SiNextdotjs, text: "Next JS", style: "text-black" },
+  { icon: SiMongodb, text: "Mongo DB", style: "text-green-500" },
+  { icon: SiRedux, text: "Redux", style: "text-purple-500" },
+  { icon: SiNodedotjs, text: "Node JS", style: "text-green-600" },
+  { icon: SiCss3, text: "CSS", style: "text-blue-600" },
+  { icon: SiGit, text: "Git", style: "text-orange-500" },
+  { icon: SiHtml5, text: "HTML", style: "text-orange-600" },
+  { icon: SiExpress, text: "Express JS", style: "text-[#5651e5]" },
+];
+
+const Skill = ({style, icon, text}) => (
+  <div
+    className="py-4 shadow-lg rounded-xl hover:scale-110 ease-in duration-150"
+  >
     <div className="flex flex-col justify-center items-center">
-      <div className={`mx-auto text-5xl text-${color}`}>{icon}</div>
-      <p className="font-semibold my-1 cursor-default">{text}</p>
+      <div className={`mx-auto text-5xl ${style}`}>
+        {createElement(icon)}
+      </div>
+      <p className="font-semibold my-1 cursor-default">
+        {text}
+      </p>
     </div>
   </div>
-);
+)
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-4/5 py-32 mx-auto">
+    <div id="skills" className="w-4/5 py-24 mx-auto">
       <div className="mx-auto flex flex-col flex-start">
         <p className="text-xl font-medium tracking-widest uppercase text-black">
           <RoughNotation
@@ -39,31 +64,14 @@ const Skills = () => {
           </RoughNotation>
         </p>
         <h2>Experience</h2>
-        <div className="mt-12 p-5 gap-6 sm:gap-12 sm:p-0 flex flex-wrap justify-center w-full mx-auto">
-          <SkillItem
-            icon={<SiJavascript />}
-            text="Javascript"
-            color="yellow-400"
-          />
-          <SkillItem icon={<SiReact />} text="React" color="blue-400" />
-          <SkillItem icon={<SiReact />} text="React Native" color="blue-600" />
-          <SkillItem
-            icon={<SiTailwindcss />}
-            text="Tailwind CSS"
-            color="blue-400"
-          />
-          <SkillItem icon={<SiNextdotjs />} text="Next JS" color="black" />
-          <SkillItem icon={<SiMongodb />} text="Mongo DB" color="green-500" />
-          <SkillItem icon={<SiRedux />} text="Redux" color="purple-500" />
-          <SkillItem icon={<SiNodedotjs />} text="Node JS" color="green-600" />
-          <SkillItem icon={<SiCss3 />} text="CSS" color="blue-600" />
-          <SkillItem icon={<SiGit />} text="Git" color="orange-500" />
-          <SkillItem icon={<SiHtml5 />} text="HTML" color="orange-600" />
-          <SkillItem
-            icon={<SiExpress />}
-            text="Express JS"
-            color="indigo-700"
-          />
+        <div className="mt-12 p-5 gap-12 sm:p-0 grid grid-cols-2 md:grid-cols-7 justify-center w-full mx-auto">
+          {skillsData.map((skill, index) => (
+            <Skill
+              style={skill.style}
+              icon={skill.icon}
+              text={skill.text}
+            />
+          ))}
         </div>
       </div>
     </div>
