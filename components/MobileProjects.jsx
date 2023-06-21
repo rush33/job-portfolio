@@ -12,6 +12,7 @@ import "swiper/css/scrollbar";
 import sd from "../public/assets/sd.png";
 import feedback from "../public/assets/feedback.png";
 import food from "../public/assets/food.png";
+import social from "../public/assets/social.png";
 
 const ProjectCard = ({
   imageSrc,
