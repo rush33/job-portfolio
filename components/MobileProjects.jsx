@@ -125,6 +125,17 @@ const MobileProjects = () => {
           </SwiperSlide>
 
           <SwiperSlide>
+              <ProjectCard
+              imageSrc={social}
+              title="Social Cards"
+              technologies={["React JS", "Rest API"]}
+              description="A UI to search and filter social cards fetched from an API"
+              github="https://github.com/rush33/social-cards"
+              demoLink="https://social-cards.vercel.app/"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
             <ProjectCard
               imageSrc={feedback}
               title="Feedback UI"
